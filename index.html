@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <title>Page Title</title>
   <body>
-    <!-- Start of Talkdesk Code -->
+   <!-- Start of Talkdesk Code -->
     <script>
       var webchat;
       ((window, document, node, props, configs) => {
@@ -15,7 +15,7 @@
         divContainer.id = node;
         document.body.appendChild(divContainer);
         var currentDate = new Date().getTime();
-        var src = `https://talkdeskchatsdk.talkdeskapp.com/talkdeskchatsdk.js?t=` + currentDate;
+        var src = `https://talkdeskchatsdk.svc.talkdeskqa.com/talkdeskchatsdk.js?t=` + currentDate;
         var script = document.createElement("script");
         var firstScriptTag = document.getElementsByTagName("script")[0];
         script.type = "text/javascript";
@@ -32,7 +32,7 @@
         window,
         document,
         "tdWebchat",
-        { flowId: "682cb5a6a57c4e958209173ee2fb2cd3", accountId: "", region: "td-us-1" },
+        { flowId: "3e97b368acdb47d2b3b910aca316eb92", accountId: "", region: "td-us-1" },
         { enableEmoji: true, enableUserInput: true }
       );
     </script>
